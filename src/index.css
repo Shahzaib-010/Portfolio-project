@@ -1,0 +1,19 @@
+@font-face {
+  font-family: wix2;
+  src: url(/fonts/wix2.ttf);
+}
+
+@font-face {
+  font-family: wix;
+  src: url(/fonts/wix.ttf);
+}
+
+
+@import "tailwindcss";
+
+@theme{
+    --font-wix2 : wix2, "san-serif";
+      --font-wix : wix, "san-serif"
+    
+  }
+  
