@@ -43,7 +43,8 @@ function Contact() {
 
   return (
     <section className="bg-white w-full min-h-screen relative">
-      <Navbar />
+      <Navbar />   
+       
 
       <div className="w-full h-full flex flex-col items-center pt-[2vw]">
         {/* TITLE */}
@@ -65,7 +66,7 @@ function Contact() {
 
             <div className=" text-[2vw] text-black font-wix2   ">
               <p>
-                Got an idea in mind? Let’s connect and explore how I can bring
+                Got an idea in mind? Let’s do connect and explore how I can bring
                 it to life.
               </p>
             </div>
