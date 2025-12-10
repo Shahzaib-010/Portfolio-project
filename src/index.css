@@ -1,3 +1,5 @@
+/* -----------------------------Font----------------------------- */
+
 @font-face {
   font-family: wix2;
   src: url(/fonts/wix2.ttf);
@@ -7,13 +9,83 @@
   font-family: wix;
   src: url(/fonts/wix.ttf);
 }
+@font-face {
+  font-family: switzer;
+  src: url('/fonts/switzer.ttf');
+}
+
+@font-face {
+  font-family: switzer2;
+  src: url('/fonts/switzer2.ttf');
+}
+@font-face {
+  font-family: charlie-bold, sans-serif;
+  src: url('/fonts/Charlie_Display-Bold.ttf');
+}
+@font-face {
+  font-family: charlie-reg, sans-serif;
+  src: url('/fonts/Charlie_Display-Regular.ttf');
+}
+
+
+
+
+
+/* -----------------------------Font----------------------------- */
 
 
 @import "tailwindcss";
 
+
 @theme{
     --font-wix2 : wix2, "san-serif";
-      --font-wix : wix, "san-serif"
+    --font-wix : wix, "san-serif";
+    --font-mluvka : mluvka, "san-serif";
+    --font-switzer : switzer, "san-serif";
+    --font-charlie-bold : charlie-bold, "san-serif";
+    --font-charlie-reg : charlie-reg, "san-serif";
+
+
+    
     
   }
+
   
+
+/* -----------------------------Color Variables----------------------------- */
+
+    
+@layer base {
+  :root {
+    --color-orange: #ff6d10;       /* orange */
+    --color-text: #000000 ;        /* black */
+    --color-bg: #ffffff;           /* white */
+    
+  }
+
+  .dark {
+    --color-orange: #ff6d10;    /* orange  */
+    --color-text: #ffffff;      /* white */
+    --color-bg: #000000;        /* black */
+    
+  }
+
+  /* Optional: smooth color transition */
+  * {
+    @apply transition-colors duration-300;
+  }
+}
+
+
+/* -----------------------------Color Variables----------------------------- */
+
+
+
+
+.scroll-reveal-text .word {
+  white-space: nowrap;
+}
+
+.scroll-reveal-text .char {
+  display: inline-block;
+}

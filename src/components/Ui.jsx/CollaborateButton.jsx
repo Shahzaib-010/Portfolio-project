@@ -19,7 +19,7 @@ function CollaborateButton() {
   }, []);
 
   return (
-    <button className="hidden md:flex bg-[#deffda] text-[#000000] text-lg md:text-2xl px-5 md:px-6 py-3 rounded-2xl  items-center gap-3 w-fit">
+    <button className="hidden font-wix2 md:flex bg-[#deffda] text-[#000000] text-lg md:text-2xl px-5 md:px-6 py-3 rounded-2xl  items-center gap-3 w-fit">
       <div className="relative w-4 h-4 flex items-center justify-center">
         {/* GSAP animated pulse ring */}
         <span

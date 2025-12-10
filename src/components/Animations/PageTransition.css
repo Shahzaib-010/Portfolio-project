@@ -1,0 +1,43 @@
+/* src/transition.css
+
+/* These classes prevent flash of unstyled content and ensure position */
+.page-enter {
+  /* Immediately hide the new page before the transition */
+  opacity: 0;
+}
+
+.page-enter-active {
+  /* Set a transition on opacity for smoother non-GSAP visual changes */
+  transition: opacity 300ms; 
+  opacity: 1; /* Fade the page in if the animation overlay is not used */
+}
+
+/* We use the GSAP overlay to visually mask the page change, 
+  but these classes handle the component life-cycle during the switch.
+*/
+.page-exit {
+  opacity: 1;
+}
+
+.page-exit-active {
+  /* CRITICAL: Hide page content immediately on exit. 
+    The GSAP overlay is covering the screen, so visually this is fine.
+    We set 'opacity: 0' and 'height: 0' to prevent the exiting page 
+    from affecting the page layout and breaking the scroll.
+  */
+  opacity: 0; 
+  /* Setting height to 0 with overflow hidden ensures it collapses without affecting scroll */
+  height: 0 !important;
+  overflow: hidden;
+  transition: all 0ms; /* Ensure no CSS animation interferes with GSAP */
+} 
+
+.page-enter,
+.page-exit {
+  opacity: 0;
+}
+.page-enter-active,
+.page-exit-active {
+  opacity: 1;
+  transition: opacity 0.4s ease;
+}
