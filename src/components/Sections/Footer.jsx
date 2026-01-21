@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Footer() {
   return (
-    <footer className="w-full flex justify-center item-center p-4">
+    <footer className="w-full flex justify-center item-center bg-black ">
       <div className="w-[98%] rounded-2xl bg-black   p-8">
         <div className="flex flex-col">
           {/* upper footer sec */}
@@ -14,7 +14,7 @@ function Footer() {
               className="md:w-[18vw] rounded-2xl"
             />
 
-            <button className="px-[6vw] h-[10vw] bg-[#161616] rounded-full  font-bold font-wix2 text-white text-5xl">
+            <button className="px-[6vw] h-[10vw] bg-[#161616] rounded-full  font-bold font-wix2 text-white text-[3vw]">
               letsmail.shahzaib@gmail.com
             </button>
           </div>
@@ -30,8 +30,8 @@ function Footer() {
           </div>
 
           {/* lower footer sec */}
-          <div className="font-wix2 font-bold flex justify-center">
-            <h1 className=" text-[#161616] text-[21vw] leading-40">
+          <div className="font-wix2 font-bold flex justify-center ">
+            <h1 className=" text-[#161616] text-[21vw] leading-none">
               Shahzaib.
             </h1>
           </div>

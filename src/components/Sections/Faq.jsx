@@ -12,4 +12,4 @@ return (
   )
 }
 
-expo
+export default faq

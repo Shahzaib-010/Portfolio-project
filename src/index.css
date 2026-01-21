@@ -26,6 +26,26 @@
   font-family: charlie-reg, sans-serif;
   src: url('/fonts/Charlie_Display-Regular.ttf');
 }
+@font-face {
+  font-family: clash-display-bold;
+  src: url('/fonts/ClashDisplay-Bold.ttf');
+}
+@font-face {
+  font-family: clash-display-light;
+  src: url('/fonts/ClashDisplay-Light.ttf');
+}
+@font-face {
+  font-family: clash-display-medium;
+  src: url('/fonts/ClashDisplay-Medium.ttf');
+}
+@font-face {
+  font-family: clash-display-regular;
+  src: url('/fonts/ClashDisplay-Regular.ttf');
+}
+@font-face {
+  font-family: clash-display-semibold;
+  src: url('/fonts/ClashDisplay-Semibold.ttf');
+}
 
 
 
@@ -44,6 +64,12 @@
     --font-switzer : switzer, "san-serif";
     --font-charlie-bold : charlie-bold, "san-serif";
     --font-charlie-reg : charlie-reg, "san-serif";
+    --font-switzer : switzer, "san-serif";
+    --font-clash-bold: clash-display-bold, "san-serif";
+    --font-clash-semibold: clash-display-semibold, "san-serif";
+    --font-clash-medium: clash-display-medium, "san-serif";
+    --font-clash-regular: clash-display-regular, "san-serif";
+    --font-clash-light: clash-display-light, "san-serif";
 
 
     

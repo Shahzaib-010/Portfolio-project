@@ -1,4 +1,3 @@
-// ScrollReveal.jsx
 import React, { useEffect, useRef } from "react";
 import SplitType from "split-type";
 import gsap from "gsap";
@@ -6,21 +5,25 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const ScrollReveal = ({ text, bgColor = "#ccc", fgColor = "black", className = "" }) => {
+const ScrollReveal = ({
+  text,
+  fgColor = "#333333",   // initial text color (dark gray)
+  bgColor = "#ffffff",    // reveal color (white)
+  className = "",
+}) => {
   const textRef = useRef(null);
 
   useEffect(() => {
     if (!textRef.current) return;
 
-    // Split into words + chars so we can preserve whole words
+    // Split words + chars
     const split = new SplitType(textRef.current, { types: "words, chars" });
 
-    // FIX: prevent breaking of words
+    // Prevent breaking words
     split.words.forEach((word) => {
       word.style.whiteSpace = "nowrap";
     });
 
-    // GSAP animation (same as before)
     const anim = gsap.fromTo(
       split.chars,
       { color: fgColor },
@@ -28,30 +31,28 @@ const ScrollReveal = ({ text, bgColor = "#ccc", fgColor = "black", className = "
         color: bgColor,
         duration: 0.5,
         stagger: 0.02,
+        ease: "power1.out",
         scrollTrigger: {
           trigger: textRef.current,
-          start: "top 50%",
+          start: "top 70%",
           end: "top 20%",
           scrub: true,
           markers: false,
-          toggleActions: "play play reverse reverse",
         },
       }
     );
 
     return () => {
       anim.kill();
-      ScrollTrigger.getAll().forEach((st) => st.kill());
       split.revert();
+      ScrollTrigger.getAll().forEach((st) => st.kill());
     };
-  }, [text, bgColor, fgColor]);
+  }, [text, fgColor, bgColor]);
 
   return (
     <p
       ref={textRef}
       className={`scroll-reveal-text leading-tight ${className}`}
-      data-bg-color={bgColor}
-      data-fg-color={fgColor}
     >
       {text}
     </p>
