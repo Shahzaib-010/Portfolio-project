@@ -82,14 +82,13 @@
 
 import { motion, useScroll, useTransform } from "motion/react";
 import Magnet from "../Ui.jsx/Magnet";
+import { TiArrowSortedDown } from "react-icons/ti";
 
 export default function Landingpage() {
   const { scrollYProgress } = useScroll();
 
   // Parallax layers (UNCHANGED)
   const headingY = useTransform(scrollYProgress, [0, 1], ["0%", "-20%"]);
-  const leftLabelY = useTransform(scrollYProgress, [0, 1], ["0%", "-40%"]);
-  const rightLabelY = useTransform(scrollYProgress, [0, 1], ["0%", "-30%"]);
 
   return (
     <section className="w-full h-screen flex flex-col items-center justify-around relative overflow-hidden">
@@ -106,18 +105,20 @@ export default function Landingpage() {
       >
 
         {/* LEFT TOP LABEL */}
-        <motion.p
-          style={{ y: leftLabelY }}
+        <motion.div
+          
           animate={{ y: [0, -6, 0] }}
           transition={{
             duration: 3,
             repeat: Infinity,
             ease: "easeInOut",
           }}
-          className="absolute top-[35%] left-[17%] text-blue-500 text-xl tracking-wide font-clash-regular will-change-transform"
+          className="absolute top-[35%] left-[17%] text-yellow-300 text-xl tracking-wide font-clash-regular will-change-transform"
         >
-          Creative Designer
-        </motion.p>
+          
+          <p className="relative">Creative Designer</p>
+         <img src="/images/arrow1.0.png" alt="" className="absolute -top-2 -right-15 w-20 h-20 "/>
+        </motion.div>
 
         {/* MAIN HEADING */}
         <motion.div style={{ y: headingY }} className="will-change-transform">
@@ -133,18 +134,19 @@ export default function Landingpage() {
         </motion.div>
 
         {/* RIGHT BOTTOM LABEL */}
-        <motion.p
-          style={{ y: rightLabelY }}
+        <motion.div
+          
           animate={{ y: [0, 8, 0] }}
           transition={{
             duration: 4,
             repeat: Infinity,
             ease: "easeInOut",
           }}
-          className="absolute -bottom-10 right-[10%] text-blue-500 text-xl tracking-wide font-clash-regular will-change-transform"
+          className="absolute -bottom-20 right-[10%] text-blue-500 text-xl tracking-wide font-clash-regular will-change-transform"
         >
-          Frontend Web Developer
-        </motion.p>
+           <img src="/images/arrow3.1.png" alt="" className="absolute rotate-180 bottom-3 -left-13 w-20 h-20 "/>
+          <p className="relative text-yellow-300">Frontend Web Developer </p>
+        </motion.div>
 
       </motion.div>
 
@@ -155,8 +157,10 @@ export default function Landingpage() {
         transition={{ delay: 0.6, duration: 0.8 }}
         className="w-full flex justify-between items-end-safe"
       >
-        <div className="text-white px-5">
-          <h1>90930909</h1>
+        <div className=" px-5 space-y-5 pt-4">
+          <img src="/images/github.png" className="w-6 h-6" alt="" />
+          <img src="/images/linkedin.png" className="w-6 h-6" alt="" />
+          
         </div>
 
         <div className="rotate-90 flex items-center gap-1">

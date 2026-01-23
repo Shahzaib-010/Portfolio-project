@@ -24,7 +24,7 @@ export default function Home() {
           </div>
           
           {/* About Section */}
-          <div className="h-[100vh] w-full">
+          <div className=" ">
             <About />
           </div>
 

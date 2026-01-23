@@ -1,45 +1,54 @@
 import React from "react";
 import ScrollReveal from "../components/Animations/ScrollReveal";
 import AnimatedButton from "../components/Animations/AnimatedButton";
-import Navbar from "../components/Sections/Navbar";
-import Footer from "../components/Sections/Footer";
+
 
 function About() {
   return (
-    <section className="w-full bg-black text-white flex flex-col">
+    <section className="h-screen w-full text-white flex flex-col  items-center pt-[4rem]">
       
-
-      <div className="w-full flex justify-around items-center h-full pt-[15vw] pb-20">
+      {/* info */}
+      <div className="lg:text-3xl font-bold text-[var(--color-orange)] font-clash-regular pb-[4rem]  tracking-wider">
+            <p>ABOUT ME </p>
+      </div>
+      <div className="w-full flex flex-col items-center h-full ">
         
-        {/* Image */}
-        <div className="w-[30%] flex justify-center">
-          <img
-            src="./images/pfp.jpeg"
-            alt="pfp"
-            className="md:w-[21vw] rounded-2xl shadow-xl"
-          />
-        </div>
+        
+
+         
 
         {/* Text Content */}
-        <div className="w-[60%] space-y-6">
+        <div className="w-[60%] flex items-center ">
           
-          <div className="lg:text-xl font-bold text-[var(--color-orange)] font-wix2">
-            <p>Who am I?</p>
-          </div>
+         
 
-          <div className="font-clash-regular font-semibold md:text-3xl xl:text-3xl leading-none tracking-wide">
+          <div className="font-clash-regular text-center md:text-3xl xl:text-3xl leading-none tracking-wider">
             <ScrollReveal
-              text="A passionate UI/UX designer committed to blending creativity with user-focused design, crafting seamless digital experiences that captivate and engage. Skilled in translating concepts into visually striking and intuitive interfaces that leave a lasting impact."
+              text="I create unconventional yet functional interfaces for web that value precision over noise. From layout structure to micro-interactions, my focus is on building interfaces that feel effortless to use and refined to look at . Strong frontend foundations paired with an eye for design allow me to deliver experiences that are both practical and visually composed.
+"
               fgColor="#3a3a3a"   // dark gray starting color
               bgColor="#ffffff"   // white reveal color
             />
           </div>
+          
 
-          {/* <AnimatedButton /> */}
-          <button className="bg-gradient-to-r from-red-600 to-orange-500 px-6 py-3 rounded-xl font-switzer">Let's Connect</button>
+          
+          {/* <button className="bg-gradient-to-r from-red-600 to-orange-500 px-6 py-3 rounded-xl font-switzer">Let's Connect</button> */}
 
         </div>
       </div>
+
+      {/* Tech stack */}
+
+      <div className="">
+        <h1 className="lg:text-3xl font-bold text-[var(--color-orange)] font-clash-regular pb-[4rem] tracking-wider">TECH STACK</h1>
+        <div className="">
+          
+        </div>
+      </div>
+      
+
+
 
       
     </section>

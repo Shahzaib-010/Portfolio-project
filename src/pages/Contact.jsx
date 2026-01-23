@@ -42,11 +42,11 @@ function Contact() {
   };
 
   return (
-    <section className="bg-white w-full min-h-screen relative">
+    <section className="bg-black w-full min-h-screen h-[140vh] relative">
       
        
 
-      <div className="w-full h-full flex flex-col items-center pt-[2vw]">
+      <div className="w-full h-full flex flex-col items-center pt-[4vw]">
         {/* TITLE */}
         <h1 className="text-[20vw] font-extrabold uppercase leading-none text-center lg:text-left">
           <span className="bg-gradient-to-r from-red-600 to-orange-500 text-transparent bg-clip-text font-switzer2">
@@ -58,18 +58,17 @@ function Contact() {
         <div className="w-full max-w-[90%] mx-auto flex justify-between items-start p-4 pt-[5vw]">
           {/* LEFT SIDE IMAGE */}
           <div className="flex flex-col justify-between w-[50%] space-y-[2vw]">
-            <div className="">
-              <h2 className="text-[8vw] text-orange-500 font-wix2 leading-0  ">
+            <div className="flex">
+              <h2 className="text-[8vw] text-orange-600 font-wix2 leading-0">
                 "
               </h2>
-            </div>
-
-            <div className=" text-[2vw] text-black font-wix2   ">
-              <p>
-                Got an idea in mind? Let’s connect and explore how I can bring
+               <p className=" text-[2vw] text-white font-clash-medium ">
+                Got an idea in mind? Let’s <span className="text-orange-600">Connect</span> and explore how I can bring
                 it to life.
               </p>
             </div>
+
+           
 
             <div className="flex justify-start items-center space-x-2">
               <img
@@ -78,7 +77,7 @@ function Contact() {
                 className="w-[8vw] md:w-[5vw] rounded-full object-cover"
               />
 
-              <div className="font-wix2 font-light">
+              <div className="font-clash-medium font-light text-white ">
                 
               <p>Shahzaib Anwar</p>
               <p>Creative Developer</p>
@@ -98,14 +97,14 @@ function Contact() {
             className="w-[55vw] md:w-[35vw] flex flex-col gap-[4vw] md:gap-[1.5vw] font-switzer"
           >
             {/* NAME */}
-            <div className="flex flex-col w-full">
+            <div className="flex flex-col w-full text-white ">
               <input
                 type="text"
                 name="name"
                 placeholder="Your Name*"
                 value={form.name}
                 onChange={handleChange}
-                className={`w-full bg-transparent outline-none border-b-1 border-b-gray-400 
+                className={`w-full bg-transparent outline-none border-b-1 border-b-neutral-400 
                   ${
                     errors.name
                       ? "border-red-500"
@@ -130,7 +129,7 @@ function Contact() {
                 placeholder="Your Email*"
                 value={form.email}
                 onChange={handleChange}
-                className={`w-full bg-transparent outline-none border-b-1 border-b-gray-400 
+                className={`w-full bg-transparent outline-none border-b-1 border-b-neutral-400  
                   ${
                     errors.email
                       ? "border-red-500"
@@ -156,7 +155,7 @@ function Contact() {
                 value={form.message}
                 onChange={handleChange}
                 rows="4"
-                className={`w-full bg-transparent outline-none border-b-1 border-b-gray-400   
+                className={`w-full bg-transparent outline-none border-b-1 border-b-neutral-400   
                   ${
                     errors.message
                       ? "border-red-500"
@@ -176,7 +175,7 @@ function Contact() {
             {/* BUTTON */}
             <button
               type="submit"
-              className="bg-orange-500 hover:bg-orange-600 text-white font-semibold
+              className="bg-orange-500 hover:bg-orange-600 text-black font-clash-medium
               text-[4vw] md:text-[1.2vw] px-[5vw] md:px-[2vw] py-[2vw] md:py-[0.8vw]
               rounded-md w-fit transition-all duration-300"
             >
