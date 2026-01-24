@@ -83,6 +83,7 @@
 import { motion, useScroll, useTransform } from "motion/react";
 import Magnet from "../Ui.jsx/Magnet";
 import { TiArrowSortedDown } from "react-icons/ti";
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 
 export default function Landingpage() {
   const { scrollYProgress } = useScroll();
@@ -119,9 +120,11 @@ export default function Landingpage() {
           <p className="relative">Creative Designer</p>
          <img src="/images/arrow1.0.png" alt="" className="absolute -top-2 -right-15 w-20 h-20 "/>
         </motion.div>
+        
 
         {/* MAIN HEADING */}
         <motion.div style={{ y: headingY }} className="will-change-transform">
+          
           <Magnet padding={50} disabled={false} magnetStrength={15}>
             <h1
               className="text-[12vw] leading-none font-clash-medium font-bold 
@@ -130,6 +133,7 @@ export default function Landingpage() {
             >
               SHAHZAIB
             </h1>
+             
           </Magnet>
         </motion.div>
 
@@ -160,6 +164,7 @@ export default function Landingpage() {
         <div className=" px-5 space-y-5 pt-4">
           <img src="/images/github.png" className="w-6 h-6" alt="" />
           <img src="/images/linkedin.png" className="w-6 h-6" alt="" />
+          <img src="/images/resume2.png" className="w-6 h-6" alt="" />
           
         </div>
 
@@ -170,6 +175,7 @@ export default function Landingpage() {
           <img src="/images/arrows.png" alt="" className="w-12" />
         </div>
       </motion.div>
+      
 
     </section>
   );

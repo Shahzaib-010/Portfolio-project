@@ -1,18 +1,19 @@
 import React from "react";
 import ScrollReveal from "../components/Animations/ScrollReveal";
 import AnimatedButton from "../components/Animations/AnimatedButton";
+import SkillsSection from "../components/Sections/skills/SkillsSection";
 
 
 function About() {
   return (
-    <section className="h-screen w-full text-white flex flex-col  items-center pt-[4rem]">
+    <section className="min-h-[200vh] w-full text-white flex flex-col justify-around  items-center pt-[4rem]">
       
       {/* info */}
-      <div className="lg:text-3xl font-bold text-[var(--color-orange)] font-clash-regular pb-[4rem]  tracking-wider">
+      
+      <div className="w-full flex flex-col items-center h-full ">
+        <div className="lg:text-3xl font-bold text-[var(--color-orange)] font-clash-regular pb-[4rem]  tracking-wider">
             <p>ABOUT ME </p>
       </div>
-      <div className="w-full flex flex-col items-center h-full ">
-        
         
 
          
@@ -40,11 +41,10 @@ function About() {
 
       {/* Tech stack */}
 
-      <div className="">
-        <h1 className="lg:text-3xl font-bold text-[var(--color-orange)] font-clash-regular pb-[4rem] tracking-wider">TECH STACK</h1>
-        <div className="">
-          
-        </div>
+      <div className="flex flex-col items-center justify-center">
+        <h1 className="lg:text-3xl font-bold text-[var(--color-orange)] font-clash-regular pb-[2rem] tracking-wider">TECH STACK</h1>
+        <SkillsSection />
+        
       </div>
       
 

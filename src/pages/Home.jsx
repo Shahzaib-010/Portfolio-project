@@ -6,14 +6,12 @@ import Landingpage from "../components/Sections/Landingpage";
 import Footer from "../components/Sections/Footer";
 import Work from "./Work";
 
+
 export default function Home() {
   return (
     <section className="min-h-screen w-full bg-black overflow-hidden relative">
       
-      {/* === INTERACTIVE LIQUID ETHER BACKGROUND === */}
      
-      {/* === CONTENT LAYER === */}
-      {/* ✅ Remove pointer-events-none here */}
       <motion.div className="relative z-10">
         <div className="flex flex-col justify-center items-center">
           
@@ -26,6 +24,11 @@ export default function Home() {
           {/* About Section */}
           <div className=" ">
             <About />
+          </div>
+
+
+          <div className=" ">
+            
           </div>
 
           {/* About Section */}
