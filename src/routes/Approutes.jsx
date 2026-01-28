@@ -8,7 +8,7 @@ import Home from "../pages/Home";
 import Contact from "../pages/Contact";
 import About from "../pages/About";
 import Work from "../pages/Work";
-import Photography from "../pages/Photography";
+import Photography from "../pages/Perspective";
 import Services from "../pages/Services";
 
 // Layout
@@ -17,6 +17,7 @@ import PageLayout from "../Layout/PageLayout";
 // Smooth Scroll
 import Lenis from "lenis";
 import { useEffect } from "react";
+import Perspective from "../pages/Perspective";
 
 // Global smooth scroll + root wrapper
 const RootWrapper = () => {
@@ -44,9 +45,9 @@ const router = createBrowserRouter([
           { path: "/", element: <Home /> },
           { path: "/about", element: <About /> },
           { path: "/work", element: <Work /> },
-          { path: "/photography", element: <Photography /> },
+          { path: "/perspective", element: <Perspective /> },
           { path: "/contact", element: <Contact /> },
-          { path: "/services", element: <Services /> },
+          
         ],
       },
     ],

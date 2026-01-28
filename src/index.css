@@ -103,6 +103,21 @@
 }
 
 
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-to-r from-red-600 via-orange-700 to-amber-600
+         text-transparent bg-clip-text;
+  }
+}
+
+
+.gradient-border {
+  background:
+    linear-gradient(#000, #000) padding-box,
+    linear-gradient(135deg, #0073ff, #ff9f1c) border-box;
+    border: 3px solid transparent;
+}
+
 /* -----------------------------Color Variables----------------------------- */
 
 

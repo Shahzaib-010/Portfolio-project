@@ -11,7 +11,7 @@ function About() {
       {/* info */}
       
       <div className="w-full flex flex-col items-center h-full ">
-        <div className="lg:text-3xl font-bold text-[var(--color-orange)] font-clash-regular pb-[4rem]  tracking-wider">
+        <div className="lg:text-3xl font-bold text-gradient font-clash-regular pb-[4rem]  tracking-wider">
             <p>ABOUT ME </p>
       </div>
         

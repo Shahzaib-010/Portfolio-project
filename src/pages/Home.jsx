@@ -5,6 +5,7 @@ import About from "./About";
 import Landingpage from "../components/Sections/Landingpage";
 import Footer from "../components/Sections/Footer";
 import Work from "./Work";
+import Approach from "../components/Sections/Approach";
 
 
 export default function Home() {
@@ -28,7 +29,7 @@ export default function Home() {
 
 
           <div className=" ">
-            
+            <Approach/>
           </div>
 
           {/* About Section */}

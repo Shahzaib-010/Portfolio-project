@@ -128,8 +128,7 @@ export default function Landingpage() {
           <Magnet padding={50} disabled={false} magnetStrength={15}>
             <h1
               className="text-[12vw] leading-none font-clash-medium font-bold 
-              bg-gradient-to-r from-red-600 to-orange-500
-              text-transparent bg-clip-text tracking-wide"
+              text-gradient tracking-wide"
             >
               SHAHZAIB
             </h1>

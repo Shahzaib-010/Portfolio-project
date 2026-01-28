@@ -104,7 +104,7 @@ export default function Navbar() {
             <FlipLink to="/">Home</FlipLink>
             <FlipLink to="/about">About</FlipLink>
             <FlipLink to="/work">Work</FlipLink>
-            <FlipLink to="/services">Services</FlipLink>
+            <FlipLink to="/perspective">Perspective</FlipLink>
             <FlipLink to="/contact">Contact</FlipLink>
           </div>
 
