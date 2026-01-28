@@ -6,6 +6,7 @@ import Landingpage from "../components/Sections/Landingpage";
 import Footer from "../components/Sections/Footer";
 import Work from "./Work";
 import Approach from "../components/Sections/Approach";
+import PerspectiveGrid from '../components/Animations/PerspectiveGrid'
 
 
 export default function Home() {
@@ -13,7 +14,7 @@ export default function Home() {
     <section className="min-h-screen w-full bg-black overflow-hidden relative">
       
      
-      <motion.div className="relative z-10">
+  <PerspectiveGrid />
         <div className="flex flex-col justify-center items-center">
           
           {/* Top Section */}
@@ -41,7 +42,7 @@ export default function Home() {
           
           
         </div>
-      </motion.div>
+      
     </section>
   );
 }

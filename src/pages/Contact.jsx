@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Navbar from "../components/Sections/Navbar";
 import Footer from "../components/Sections/Footer"
+import PerspectiveGrid from "../components/Animations/PerspectiveGrid";
 
 function Contact() {
   const [form, setForm] = useState({
@@ -44,9 +45,9 @@ function Contact() {
   return (
     <section className="bg-black w-full min-h-screen h-[140vh] relative">
       
-       
+       <PerspectiveGrid  opacity={0.06}/>
 
-      <div className="w-full h-full flex flex-col items-center pt-[4vw]">
+      <div className="w-full h-full flex flex-col items-center pt-[4vw]  z-10 relative">
         {/* TITLE */}
         <h1 className="text-[20vw] font-extrabold uppercase leading-none text-center lg:text-left">
           <span className="bg-gradient-to-r from-red-600 to-orange-500 text-transparent bg-clip-text font-switzer2">
