@@ -1,7 +1,7 @@
 import React from "react";
 import ScrollReveal from "../components/Animations/ScrollReveal";
 import AnimatedButton from "../components/Animations/AnimatedButton";
-import SkillsSection from "../components/Sections/skills/SkillsSection";
+import SkillsSection from "../components/Sections/Skills/SkillsSection";
 
 
 function About() {
