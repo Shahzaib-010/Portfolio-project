@@ -9,6 +9,7 @@
   font-family: wix;
   src: url(/fonts/wix.ttf);
 }
+
 @font-face {
   font-family: switzer;
   src: url('/fonts/switzer.ttf');
@@ -95,7 +96,7 @@
   }
 
   .dark {
-    --color-orange: #ff6d10;    /* orange  */
+    --color-orange: #fe7825b6;    /* orange  */
     --color-text: #ffffff;      /* white */
     --color-bg: #000000;        /* black */
     

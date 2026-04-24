@@ -85,18 +85,23 @@ import { RouterProvider } from "react-router-dom";
 import { ThemeProvider } from "./context/ThemeContext";
 import { TransitionProvider } from "./context/TransitionContext";
 import router from "./routes/Approutes";
+import { inject } from '@vercel/analytics';
 
 
 // Styles
 import "./lenis.css";
 import "./index.css";
 
+inject();
+
 ReactDOM.createRoot(document.getElementById("root")).render(
   
+  <React.StrictMode>
     <ThemeProvider>
       <TransitionProvider>
         <RouterProvider router={router} />
       </TransitionProvider>
     </ThemeProvider>
+    </React.StrictMode>
   
 );
