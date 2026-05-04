@@ -59,9 +59,7 @@ export default function Home() {
               className="h-px bg-gradient-to-r from-transparent via-white/60 to-transparent"
             />
 
-          <div className=" ">
-            <Approach/>
-          </div>
+         
 
            
 
@@ -71,6 +69,9 @@ export default function Home() {
           </div>
 
           
+           <div className=" ">
+            <Approach/>
+          </div>
 
 
           {/* Example Placeholder Section */}
