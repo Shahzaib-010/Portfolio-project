@@ -6,7 +6,7 @@ const projects = [
     title: "Apni Profile",
     role: "Frontend Developer",
     year: "2026",
-    desc: "The Last Link You’ll Ever Send. Turn your entire career into a single, structured link. No PDFs. No scattered portfolios. Just one clean, recruiter-ready profile.",
+    desc: "The Last Link You'll Ever Send. Turn your entire career into a single, structured link. No PDFs. No scattered portfolios. Just one clean, recruiter-ready profile.",
     repo: null,
     live: "https://apniprofile.vercel.app",
     isHidden: false,
@@ -26,7 +26,7 @@ const projects = [
     title: "Sialkot Stallionz",
     role: "Development, UI, Pixel Perfect",
     year: "2026",
-    desc: "Where Passion Meets Power — The Official Digital Home of Sialkot Stallionz.",
+    desc: "Where Passion Meets Power - The Official Digital Home of Sialkot Stallionz.",
     repo: "https://github.com/Shahzaib-010/sialkotstallionz",
     live: "https://sialkotstallionz.com",
     isHidden: true,
@@ -54,8 +54,11 @@ const projects = [
 ];
 
 function WorkCard({ project }) {
+  const primaryLink = project.live || project.repo;
+  const primaryLabel = project.live ? "Live Site" : "GitHub Repo";
+
   return (
-    <div className="group relative overflow-hidden rounded-2xl border border-white/10 bg-black/70 px-5 py-6 md:px-6 md:py-7 shadow-[0_10px_40px_rgba(0,0,0,0.25)] hover:shadow-[0_18px_60px_rgba(0,0,0,0.35)] transition-shadow h-full">
+    <div className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-white/10 bg-black/70 px-5 py-6 md:px-6 md:py-7 shadow-[0_10px_40px_rgba(0,0,0,0.25)] hover:shadow-[0_18px_60px_rgba(0,0,0,0.35)] transition-shadow">
       {/* Gradient Sweep */}
       <div className="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-500 bg-[linear-gradient(120deg,rgba(0,255,209,0.10),rgba(0,115,255,0.08),rgba(255,109,16,0.08))]" />
 
@@ -75,36 +78,25 @@ function WorkCard({ project }) {
       </div>
 
       {/* Details (text-only) */}
-      <div className="relative mt-5 flex flex-col h-full">
+      <div className="relative mt-5 flex flex-1 flex-col">
         <p className="text-sm text-white/70 font-switzer leading-relaxed">
           {project.desc}
         </p>
         <div className="mt-3 flex flex-wrap items-center gap-3 text-xs uppercase tracking-[0.3em] text-white/50 font-switzer">
           <span>{project.role}</span>
-          <span className="text-white/30">•</span>
+          <span className="text-white/30">*</span>
           <span>{project.year}</span>
         </div>
         <div className="mt-auto pt-6 flex items-center gap-5">
-          {project.live && (
+          {primaryLink && (
             <a
-              href={project.live}
+              href={primaryLink}
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.3em] font-switzer text-[var(--color-orange)] hover:text-white transition-colors"
             >
-              Live Site
-              <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
-            </a>
-          )}
-          {project.repo && (
-            <a
-              href={project.repo}
-              target="_blank"
-              rel="noreferrer"
-              className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.3em] font-switzer text-[var(--color-orange)] hover:text-white transition-colors"
-            >
-              Repo
-              <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
+              {primaryLabel}
+              <span className="transition-transform duration-300 group-hover:translate-x-1">-&gt;</span>
             </a>
           )}
         </div>
