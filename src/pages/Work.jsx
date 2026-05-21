@@ -3,12 +3,12 @@ import React from "react";
 const projects = [
   {
     number: "01",
-    title: "Apni Profile",
+    title: "Karigaar",
     role: "Frontend Developer",
     year: "2026",
-    desc: "The Last Link You'll Ever Send. Turn your entire career into a single, structured link. No PDFs. No scattered portfolios. Just one clean, recruiter-ready profile.",
+    desc: "Your Karigaar, At Your Door",
     repo: null,
-    live: "https://apniprofile.vercel.app",
+    live: "https://kaarigaar.vercel.app",
     isHidden: false,
   },
   {
@@ -23,6 +23,16 @@ const projects = [
   },
   {
     number: "03",
+    title: "Apni Profile",
+    role: "Frontend Developer",
+    year: "2026",
+    desc: "The Last Link You'll Ever Send. Turn your entire career into a single, structured link. No PDFs. No scattered portfolios. Just one clean, recruiter-ready profile.",
+    repo: null,
+    live: "https://apniprofile.vercel.app",
+    isHidden: false,
+  },
+  {
+    number: "04",
     title: "Sialkot Stallionz",
     role: "Development, UI, Pixel Perfect",
     year: "2026",
@@ -32,7 +42,7 @@ const projects = [
     isHidden: true,
   },
   {
-    number: "04",
+    number: "05",
     title: "HRMIS",
     role: "UX, UI, Development",
     year: "2026",
@@ -42,7 +52,7 @@ const projects = [
     isHidden: true,
   },
   {
-    number: "05",
+    number: "06",
     title: "Portfolio Website",
     role: "UI, UX, Development, Deployment",
     year: "2026",
