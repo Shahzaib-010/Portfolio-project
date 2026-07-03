@@ -181,8 +181,8 @@ export default function Landingpage() {
       >
         <div className="px-5 pt-2 sm:pt-4 flex flex-col gap-3 sm:gap-3">
           <a
-            href="/Shahzaib.pdf"
-            download="Shahzaib.pdf"
+            href="/Shahzaib Anwar - MERN.pdf"
+            download="Shahzaib Anwar - MERN.pdf"
             className="group inline-flex items-center gap-3 rounded-full border border-white/15 bg-white/5 px-3 sm:px-4 py-2 text-xs font-switzer tracking-[0.25em] uppercase text-white/80 hover:text-white hover:border-white/30 transition-colors"
           >
             <img src="/images/resume2.png" className="w-4 h-4 opacity-80 group-hover:opacity-100" alt="" />
